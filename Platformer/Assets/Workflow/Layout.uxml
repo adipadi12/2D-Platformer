@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Workflow/Test_Style_Sheet.uss?fileID=7433441132597879392&amp;guid=27529dd1b4366a647b14645695c04893&amp;type=3#Test_Style_Sheet" />
+    <ui:VisualElement name="Elem" class="red_square" style="flex-grow: 1; position: relative;" />
+    <ui:VisualElement name="Elem1" class="red_square" style="flex-grow: 1; position: relative;" />
+    <ui:VisualElement name="Elem2" class="red_square" style="flex-grow: 1; position: relative;" />
+</ui:UXML>
