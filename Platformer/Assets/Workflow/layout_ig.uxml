@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Workflow/StyleSheet.uss?fileID=7433441132597879392&amp;guid=188867890be187b4db9baf5e57f1966a&amp;type=3#StyleSheet" />
+    <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 69px;" />
+    <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" class="avatarText" />
+    <ui:DropdownField label="Dropdown" index="-1" choices="System.Collections.Generic.List`1[System.String]" class="avatarImg" />
+</ui:UXML>
