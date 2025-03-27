@@ -5,21 +5,22 @@ using UnityEngine.UIElements;
 
 public class ButtonScreen : MonoBehaviour
 {
-    Label label;
+    VisualElement element;
+    Slider slider;
 
     private void OnEnable()
     {
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
 
-        label = root.Q<Label>("MyLabel");
+        element = root.Q("Box");
+        slider = root.Q<Slider>("MySlider");
+
+        slider.RegisterCallback<ChangeEvent<float>>(OnSliderChanged); //subscribing to this event
     }
 
-
-    private void Update()
+    void OnSliderChanged(ChangeEvent<float> evt)
     {
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            label.style.backgroundColor = Color.black;
-        }
+        element.style.width = evt.newValue; //takes the float of the slider value as an argument and passes into width field to alter
     }
+    
 }
